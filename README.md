@@ -23,7 +23,7 @@ Imagens retiradas do site "Scania Media Portal" para fins de estudo.
 
 Acesse o link para ver o projeto no ar:
 
-[Deploy](https://mediaportal.scania.com/group/en/home.html)
+[Deploy](https://poncianodev.github.io/desafio-11-12-kick/)
 
 ## Autor
 
