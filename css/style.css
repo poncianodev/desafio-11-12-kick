@@ -1,145 +1,84 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
-  color: #fff;
-  background-color: #171617;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+table {
+    width: 100%;
 }
 
 span {
-  color: rgb(145, 0, 0);
-  margin-left: 5px;
+    color: #004E93;
+    font-weight: 800;
 }
 
-header {
-  position: relative;
-  background-image: url(../assets/pxfuel.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 150px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
+.header {
+    position: relative;
+    height: 200px;
+    text-align: center;
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+.header::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0,0.9);
 }
 
 h1 {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    font-size: 3rem;
+    text-transform: uppercase;
+    z-index: 1;
 }
 
-nav {
-  height: 50px;
-  width: 100%;
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 2rem;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 3rem;
-  font-size: 1.2rem;
-  font-weight: 500;
+.card-trucks {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem;
 }
 
-nav ul li {
-  transition: 0.5s ease-in-out;
+.main > :nth-child(1) {
+    background-image: url(../assets/1.jpg);
+}
+.main > :nth-child(2) {
+    background-image: url(../assets/2.jpg);
+}
+.main > :nth-child(3) {
+    background-image: url(../assets/3.jpg);
 }
 
-nav ul li:hover {
-  color: rgb(255, 79, 79);
+.footer {
+    background-color: #041e42;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.article-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  height: 400px;
-  gap: 1rem;
-  margin: 10px;
-}
-
-.article-style {
-  position: relative;
-  overflow: hidden;
-  background-position: center;
-  background-size: cover;
-  border-radius: 0.5rem;
-}
-
-.article-style::after {
-  content: attr(data-text);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 10px;
-  box-sizing: border-box;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.article-style:hover::after {
-  opacity: 1;
-}
-
-.article-style:hover {
-  filter: brightness(70%);
-}
-
-.article-style {
-  transition: filter 0.3s ease;
-}
-
-.article-container > :nth-child(1) {
-  background-image: url(../assets/lamb-of-god.jpg);
-}
-
-.article-container > :nth-child(2) {
-  background-image: url(../assets/surra.jpg);
-}
-
-.article-container > :nth-child(3) {
-  background-image: url(../assets/krisiun.jpg);
-}
-
-footer {
-  height: 50px;
-  background-color: rgb(104, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 500;
-}
-
-footer a {
-  margin: 0 5px;
-  text-decoration: none;
-  color: yellow;
-  transition: 0.3s ease-in-out;
-}
-
-footer a:hover {
-  color: darkorange;
+.footer a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: darkseagreen;
 }
